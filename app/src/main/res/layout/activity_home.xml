@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@drawable/background_repeat_game">
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="191dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_startgame"
+        android:onClick="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_time" />
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="365dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="monospace"
+        android:text="Time : 20 second"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_difficulty"
+        android:layout_width="152dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="monospace"
+        android:text="Difficulty"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_start" />
+
+    <TextView
+        android:id="@+id/textView_info"
+        android:layout_width="163dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="28dp"
+        android:text="İlker Kızgın - 15030411035 | BUS 300 Internship Project 2020/05"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_line"
+        android:layout_width="247dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_difficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_start"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/line" />
+
+    <Switch
+        android:id="@+id/switch_hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="47dp"
+        android:text="HARD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/switch_normal"
+        app:layout_constraintTop_toBottomOf="@+id/textView_difficulty" />
+
+    <Switch
+        android:id="@+id/switch_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="NORMAL"
+        app:layout_constraintEnd_toEndOf="@+id/textView_difficulty"
+        app:layout_constraintStart_toEndOf="@+id/switch_easy"
+        app:layout_constraintTop_toBottomOf="@+id/textView_difficulty" />
+
+    <Switch
+        android:id="@+id/switch_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="EASY"
+        app:layout_constraintBottom_toTopOf="@+id/switch_normal"
+        app:layout_constraintEnd_toStartOf="@+id/switch_normal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView_line"
+        app:layout_constraintTop_toBottomOf="@+id/textView_difficulty"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <ImageView
+        android:id="@+id/logo_home"
+        android:layout_width="287dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="61dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
